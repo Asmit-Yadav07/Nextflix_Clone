@@ -1,0 +1,316 @@
+*{
+    margin: 0px;
+    padding:0px;
+    /* background-color: black; */
+    
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    /* justify-content:space-between; */
+    align-items: center;
+    padding-top: 25px;
+    position: relative;
+    z-index: 1;
+}
+.net{
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    width:147.2px;
+    height:40px;
+    margin-left: 150px;
+
+}
+.net1{
+    border:1px solid rgb(135, 132, 132);
+    height:25px;
+    width:109px;
+    position: relative;
+    cursor: pointer;
+    margin-left:800px ;
+    margin-right: 17px;
+    background-color: rgb(16, 15, 15);
+    color: white;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 7px;
+    text-align: center;
+    display: flex; 
+    
+    justify-content: center;
+}
+.net1 svg {
+    margin-right: 7px; 
+    margin-top:1.4px;
+    background-color: rgb(16, 15, 15);
+}
+.svg1 {
+    margin-left: 5px; 
+    background-color: rgb(49, 48, 48);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.963);
+    min-width: 120px;
+    height:49px;
+    border-radius: 7px;
+    top: 5px;
+    left: -23px;
+    /* padding: 10px 0; */
+    text-align:center;
+    /* z-index: 10; */
+    font-size: 18px;
+    border:2px solid rgb(194, 191, 191);
+    
+}
+.net1:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.net2{
+    border:2px solid red;
+    height:30px;
+    width:80px;
+    color:white;
+    background-color: red;
+    border-radius:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.first {
+    position: relative;
+    height: 90vh; /* Ensure it covers the full viewport */
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/638e9299-0637-42d1-ba39-54ade4cf2bf6/web/IN-en-20250203-TRIFECTA-perspective_46eb8857-face-4ea6-b901-dbf22b461369_large.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.first::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.first > * {
+    position: relative;
+    z-index: 1; /* Ensures content inside the element appears above the overlay */
+}
+.text{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    width:700px;
+    font-family: sans-serif;
+    margin-left:350px;
+    margin-top: 220px;
+    text-align: center;
+    
+} 
+.b{
+    font-weight:bolder;
+}   
+.textb{
+    height:52px;
+    width:370px;
+    background-color: rgba(87, 86, 86, 0.2);
+    border: 1px solid rgb(175, 171, 171);
+    border-radius: 5px;
+    
+}
+.textb::placeholder {
+    font-size: 17px; 
+    color: rgb(157, 154, 154);
+    padding-left: 19px;  
+}
+.btn1{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    height:52px;
+    width:200px;
+    margin-left: 8px;
+    margin-top:-1px;   
+}
+
+/* .trending{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    color:white; 
+} */
+
+.trending2{
+    font-family: sans-serif;
+    font-size:23px;
+    background: linear-gradient(to bottom, #020007, #12031a, #000000);
+    height:450px;
+    width:100vw;
+    color: white;
+    overflow-x: auto;
+}
+.trending-inner {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    margin-left:50px;
+}
+.trending-inner img{
+    height:270px;
+    width:190px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.trending-inner span {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.trending-inner span p {
+    position: absolute;
+    top:160px;
+    left: -29px; /* Adjust position */
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: rgb(245, 236, 236);
+    padding: 5px 8px;
+    font-size: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.more{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height:270px;
+    width:1200px;
+    
+    margin-left: 200px;
+    margin-top: 20px;
+    
+    
+}
+.more2{
+    font-family: sans-serif;
+    background: linear-gradient(180deg, #12132B 0%, #2B0F23 100%);
+    display:flex;
+    flex-direction: column;
+    border-radius:20px;
+    justify-content: space-around;
+    width:275px;
+}
+
+.trending-inner span:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out 0.2ms;
+}
+
+.more2 p{
+   padding: 12px;
+}
+.more2 svg{
+    padding-left: 185px;
+}
+.frequently{
+    font-size: 24px;
+    background-color: black;
+    color: azure;
+    padding-left: 200px;
+    
+}
+.freq2{
+    height:85px;
+    width:1170px;
+    background-color:rgb(47, 46, 46);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.freq2:hover{
+    background-color: rgb(60, 58, 58);
+    cursor: pointer;
+}
+.ready{
+    background-color: black;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.last{
+   height:200px;
+   width:1070px;
+   margin-left: 190px;
+   padding-top: 70px;
+}
+.last1{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:35px;
+    
+}
+.last1 p{
+    padding-top: 15px;
+}
+.last a{
+    color: rgb(163, 163, 163);
+}
+.lang{
+    border:1px solid rgb(135, 132, 132);
+    height:25px;
+    width:109px;
+    position: relative;
+    cursor: pointer;
+    margin-left:189px ;
+    background-color: rgb(16, 15, 15);
+    color: white;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 7px;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+}
+.lang:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+.lastl{
+    background-color: #000000;
+    padding-top: 70px;
+    height:185px;
+}
+.lang svg {
+    margin-right: 7px; 
+    margin-top:1.4px;
+    background-color: rgb(16, 15, 15);
+}
